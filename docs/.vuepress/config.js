@@ -2,7 +2,7 @@ module.exports = {
   theme: 'reco',
   title: "TauZZ'blog",
   description: 'welcome to my blog ',
-  base: '',
+  base: '/MyBlog/',
   // 移动端优化
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
