@@ -48,7 +48,7 @@ module.exports = {
 
     ],
     // 自动形成侧边导航
-    subSidebar: 'auto',
+    Sidebar: 'auto',
     sidebarDepth: 1,
     displayAllHeaders: false,
     sidebar: {
@@ -58,8 +58,13 @@ module.exports = {
           collapsable: true,
           children: ['java/20230501']
         },
-
+        {
+          title: 'JavaWeb',
+          collapsable: true,
+          children: ['java/javaweb1','java/javaweb2','java/javaweb3','java/javaweb4','java/javaweb5']
+        },
       ]
+      ,
     },
   },
 
@@ -73,20 +78,17 @@ module.exports = {
       }
     ],
 
-    [
-      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-      {
-        theme: ["miku"],
-        clean: true,
-        modelStyle: {
-          position: "fixed",
-          left: "0px",
-          bottom: "0px",
-          opacity: "0.9",
-          zIndex: 99999
-        }
+    ['@vuepress-reco/vuepress-plugin-kan-ban-niang',{
+      theme: ["miku"],
+      clean: false,
+      info: 'https://github.com/TauZi',
+      messages: {
+        welcome: '',
+        home: '心里的花，我想要带你回家',
+        theme: '好吧，希望你能喜欢我的其他小伙伴。',
+        close: '再见哦'
       }
-    ]
+    }],
 
   ]
 }

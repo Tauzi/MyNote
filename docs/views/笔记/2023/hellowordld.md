@@ -8,7 +8,7 @@ categories:
  - 学习笔记
 ---
 
-Hello java :100:  赵晓蕊吃粑粑
+Hello java :100:  
 # 你好
 ```java
 public class HelloWord{
