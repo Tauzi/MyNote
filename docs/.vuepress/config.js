@@ -11,6 +11,7 @@ module.exports = {
   themeConfig: {
     type: 'blog',
     author: 'TauZZ',
+    mode :'light ',
     // 显示在个人信息的头像
     authorAvatar: '/avatar.png',
     // 导航栏左侧logo
@@ -61,7 +62,8 @@ module.exports = {
         {
           title: 'JavaWeb',
           collapsable: true,
-          children: ['java/javaweb1','java/javaweb2','java/javaweb3','java/javaweb4','java/javaweb5']
+          children: ['java/JavaWeb网络编程','java/JavaWeb数据库基础','java/JavaWeb3','java/JavaWeb4'
+        ,'java/JavaWeb5']
         },
       ]
       ,
@@ -70,13 +72,6 @@ module.exports = {
 
   // 插件配置
   plugins: [
-    [
-      'permalink-pinyin',
-      {
-        lowercase: true,
-        separator: '-'
-      }
-    ],
 
     ['@vuepress-reco/vuepress-plugin-kan-ban-niang',{
       theme: ["miku"],
